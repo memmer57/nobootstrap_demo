@@ -1,84 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Falcon 9</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Falcon 9</title>
 </head>
 <body>
-<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html">
-        <img src="../images/SpaceX_Logo.png" alt="SpaceX logo" width="200" >  
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#F">Falcon 9</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#FH">Falcon Heavy</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#Starship">Starship</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#galerie">Galerie</a>
-        </li>
-        </ul>
-    </div>
+<nav>
+  <a class="navbar-brand" href="../index.html">
+    <img src="../images/spacex_logo.svg" alt="SpaceX logo" width="200" >  
+  </a>
+  <ul class="nav-items" id="items">
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#F9">Falcon 9</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#FH">Falcon Heavy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#Starship">Starship</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#galerie">Galerie</a>
+    </li>
+  </ul>
+  <a href="javascript:void(0);" class="icon" onclick="open_navbar()">
+    <i class="fa fa-bars"></i>
+  </a>
 </nav>
 
-<div class="header-bg mb-5" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Falcon9.jpg);">
-    <h1 style="font-size: 13vw;">Falcon 9</h1>
+<div class="title-image mb-standard" id="falcon9-background">
+  <h1>Falcon 9</h1>
 </div>    
 
-<div class="container-lg">
-    <h1 class="display-4">Falcon 9</h1>
-    <p class="mt-5">
-        Falcon 9 je nosná raketa americké soukromé společnosti SpaceX. Svým tahem a nosností je srovnatelná s ruskými raketami Angara 5 a Proton, americkými Delta IV a Atlas V a čínskou Čchang-čeng 5.<br><br>
-        Falcon 9 startuje na Floridě z Kennedyho vesmírného střediska startovací komplex LC-39A, z komplexu SLC-40 na Mysu Canaveral , nebo z komplexu SLC-4E Vandenbergovy letecké základny v Kalifornii. Nově startuje ze soukromého Kosmodromu SpaceX v jižním Texasu ve vesnici Boca Chica u Brownsville.<br><br>
-        V rámci programu na vývoj znovupoužitelného nosného systému testovala a demonstrovala společnost SpaceX potřebné technologie na raketě Falcon 9. Následně se Falcon 9 stal první a prozatím jedinou kosmickou raketou u které byl zrealizovám koncept znovupoužitelnosti prvního stupně.<br><br>
-        Při svém dvacátém startu 22. prosince 2015 první stupeň rakety úspěšně provedl experimentální přistání v přistávací zóně 1 (LZ-1) na mysu Canaveral. O čtyři měsíce později, 8. dubna 2016, první stupeň úspěšně dosedl na plovoucí autonomní přistávací plošinu Of Course I Still Love You.<br><br>
-        30. března 2017 společnost SpaceX jako první na světě úspěšně vyslala do vesmíru již dříve použitý první stupeň nosné rakety Falcon 9, bylo to při misi SES-10. Během mise se podařilo demonstrovat opakovanou použitelnost nejdražší části rakety - 1. stupně. 1. stupeň navíc po vynesení nákladu na orbitu znovu úspěšně přistál na autonomní plovoucí plošině Of Course I Still Love You. Původně byl tento 1. stupeň použit při úspěšné misi CRS-8 v dubnu 2016.<br><br>
-        K listopadu 2020 se již přistávání prvních stupňů a jejich znovupoužití stalo rutinou. Z 68 pokusů o přistání skončilo úspěchem 60 z nich. U rekordního stupně je touto dobou zrealizováno sedminásobné použití a je velice pravděpodobné, že do budoucna tato čísla budou dále narůstat. <br><br>
-    </p>
-    <div class="media mb-5">
-        <img class="align-self-center mr-3" src="../images/wikipedia.png" alt="Wikipedia logo">
-        <div class="media-body">
-          <h5 class="mt-2 font-weight-bold">Wikipedia</h5>
-          <p class="mb-0">Tento článek byl zkopírován z Wikipedie</p>
-        </div>
-      </div>
-</div>
+<h1 class="sekce-nadpis">Falcon 9</h1>
+<p class="raketa-text">
+  Falcon 9 je nosná raketa americké soukromé společnosti SpaceX. Svým tahem a nosností je srovnatelná s ruskými raketami Angara 5 a Proton, americkými Delta IV a Atlas V a čínskou Čchang-čeng 5.<br><br>
+  Falcon 9 startuje na Floridě z Kennedyho vesmírného střediska startovací komplex LC-39A, z komplexu SLC-40 na Mysu Canaveral , nebo z komplexu SLC-4E Vandenbergovy letecké základny v Kalifornii. Nově startuje ze soukromého Kosmodromu SpaceX v jižním Texasu ve vesnici Boca Chica u Brownsville.<br><br>
+  V rámci programu na vývoj znovupoužitelného nosného systému testovala a demonstrovala společnost SpaceX potřebné technologie na raketě Falcon 9. Následně se Falcon 9 stal první a prozatím jedinou kosmickou raketou u které byl zrealizovám koncept znovupoužitelnosti prvního stupně.<br><br>
+  Při svém dvacátém startu 22. prosince 2015 první stupeň rakety úspěšně provedl experimentální přistání v přistávací zóně 1 (LZ-1) na mysu Canaveral. O čtyři měsíce později, 8. dubna 2016, první stupeň úspěšně dosedl na plovoucí autonomní přistávací plošinu Of Course I Still Love You.<br><br>
+  30. března 2017 společnost SpaceX jako první na světě úspěšně vyslala do vesmíru již dříve použitý první stupeň nosné rakety Falcon 9, bylo to při misi SES-10. Během mise se podařilo demonstrovat opakovanou použitelnost nejdražší části rakety - 1. stupně. 1. stupeň navíc po vynesení nákladu na orbitu znovu úspěšně přistál na autonomní plovoucí plošině Of Course I Still Love You. Původně byl tento 1. stupeň použit při úspěšné misi CRS-8 v dubnu 2016.<br><br>
+  K listopadu 2020 se již přistávání prvních stupňů a jejich znovupoužití stalo rutinou. Z 68 pokusů o přistání skončilo úspěchem 60 z nich. U rekordního stupně je touto dobou zrealizováno sedminásobné použití a je velice pravděpodobné, že do budoucna tato čísla budou dále narůstat. <br><br>
+</p>
 
 <!-- Footer -->
-<footer class="bg-light text-start ">
-    <form class="container-lg">
-      <p class="pt-2 pt-5">
-        <strong>Napište nám!</strong>
-      </p>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Vaše jméno</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Zadejte jméno">
-      </div>
-      <div class="form-group mb-4">
-        <label for="exampleInputPassword1">Zpráva</label>
-        <textarea class="form-control" rows="3" placeholder="Zde napište zprávu"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary mb-5">Odeslat</button>
-    </form>
-  
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2021 Copyright: Matěj Emmer
-    </div>
+<footer>
+  <div class="copyright">
+    <p>© 2021 Copyright: Matěj Emmer</p>
+  </div>
 </footer>
+<script src="../js/script.js"></script>
 </body>
 </html>

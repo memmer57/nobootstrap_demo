@@ -1,83 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Starship</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Starship</title>
 </head>
 <body>
-<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html">
-        <img src="../images/SpaceX_Logo.png" alt="SpaceX logo" width="200" >  
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#F">Falcon 9</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#FH">Falcon Heavy</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#Starship">Starship</a>
-        </li>
-        <li class="nav-item mr-3 ml-3">
-            <a class="nav-link" href="../index.html#galerie">Galerie</a>
-        </li>
-        </ul>
-    </div>
+<nav>
+  <a class="navbar-brand" href="../index.html">
+    <img src="../images/spacex_logo.svg" alt="SpaceX logo" width="200" >  
+  </a>
+  <ul class="nav-items" id="items">
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#F9">Falcon 9</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#FH">Falcon Heavy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#Starship">Starship</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../index.html#galerie">Galerie</a>
+    </li>
+  </ul>
+  <a href="javascript:void(0);" class="icon" onclick="open_navbar()">
+    <i class="fa fa-bars"></i>
+  </a>
 </nav>
 
-<div class="header-bg mb-5" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Starship.jpg);">
-    <h1 style="font-size: 13vw;">Starship</h1>
-</div>
+<div class="title-image mb-standard" id="starship-background">
+  <h1>Starship</h1>
+</div>    
 
-<div class="container-lg">
-    <h1 class="display-4">Starship</h1>
-    <p class="mt-5">
-        Starship – Super Heavy (dříve: Big Falcon Rocket "BFR") je raketa vyvíjená společností SpaceX. Kosmická loď zvaná Starship a raketa Super Heavy představují plně znovupoužitelný dopravní systém navržený k přepravě posádky i nákladu na orbitu Země, na Měsíc, Mars a dále. Starship Super Heavy bude schopná na oběžnou dráhu Země dopravit více než 100 tun nákladu. Podle původních plánů se měl první testovací let uskutečnit už v roce 2020, nicméně v tomto roce došlo pouze ke skoku do výšky 12,5 kilometru. První orbitální let by měl proběhnout v roce 2021.<br><br>
-        Nosný systém Super Heavy Starship vzešel z konceptu BFR, který byl v roce 2016 veřejnosti představen jako Meziplanetární dopravní systém (Interplanetary Transport System "ITS"). Tato obří raketa o průměru 12 metrů měla mít výšku až 122 metrů. V roce 2017 však byl návrh pozměněn a raketa zhubla na 9 metrů s výškou 106 metrů, tento koncept již byl šéfem SpaceX Elonem Muskem nazván "BFR" (Big Falcon Rocket).<br><br>
-    V roce 2018 prošel koncept dalšími změnami a byly přidány aerodynamické plochy pro lepší stabilizaci lodi při průletu různě hustými atmosférami. Celá konstrukce měla být původně vyrobena z uhlíkových kompozitů, ale v roce 2018 bylo rozhodnuto využívat nerezovou ocel. Konkrétně se má jednat o upravenou vysoce kvalitní nerezovou ocel 301. Elon Musk také oznámil, že raketa byla přejmenována na Starship.<br><br>
-    Dle současných informací má být 120 metrů vysoká. Bude dvoustupňová, přičemž oba stupně budou moci přistát na zemi. Raketa bude schopna dopravit na nízkou oběžnou dráhu Země přes 100 tun nákladu. Oficiálně dokončena by měla být začátkem roku 2022.<br><br>
-    Pro počáteční testování byl použit technologický demonstrátor Starhopper, na kterém byly provedeny první statické zážehy motoru Raptor a 26. července 2019 úspěšně proběhl první neupoutaný "skok" do výšky kolem 20 metrů. Druhý a poslední pokus proběhl 27. srpna, tentokrát Starhopper vystoupal do výšky 150 metrů a poté měkce přistál. Testovací lety lodi Starship začaly v roce 2020, první proběhl 4. srpna 2020 (SN5 do 150 metrů). <br><br>
-    </p>
-    <div class="media mb-5">
-        <img class="align-self-center mr-3" src="../images/wikipedia.png" alt="Wikipedia logo">
-        <div class="media-body">
-          <h5 class="mt-2 font-weight-bold">Wikipedia</h5>
-          <p class="mb-0">Tento článek byl zkopírován z Wikipedie</p>
-        </div>
-      </div>
-</div>
+<h1 class="sekce-nadpis">Starship</h1>
+<p class="raketa-text">
+    Starship – Super Heavy (dříve: Big Falcon Rocket "BFR") je raketa vyvíjená společností SpaceX. Kosmická loď zvaná Starship a raketa Super Heavy představují plně znovupoužitelný dopravní systém navržený k přepravě posádky i nákladu na orbitu Země, na Měsíc, Mars a dále. Starship Super Heavy bude schopná na oběžnou dráhu Země dopravit více než 100 tun nákladu. Podle původních plánů se měl první testovací let uskutečnit už v roce 2020, nicméně v tomto roce došlo pouze ke skoku do výšky 12,5 kilometru. První orbitální let by měl proběhnout v roce 2021.<br><br>
+    Nosný systém Super Heavy Starship vzešel z konceptu BFR, který byl v roce 2016 veřejnosti představen jako Meziplanetární dopravní systém (Interplanetary Transport System "ITS"). Tato obří raketa o průměru 12 metrů měla mít výšku až 122 metrů. V roce 2017 však byl návrh pozměněn a raketa zhubla na 9 metrů s výškou 106 metrů, tento koncept již byl šéfem SpaceX Elonem Muskem nazván "BFR" (Big Falcon Rocket).<br><br>
+V roce 2018 prošel koncept dalšími změnami a byly přidány aerodynamické plochy pro lepší stabilizaci lodi při průletu různě hustými atmosférami. Celá konstrukce měla být původně vyrobena z uhlíkových kompozitů, ale v roce 2018 bylo rozhodnuto využívat nerezovou ocel. Konkrétně se má jednat o upravenou vysoce kvalitní nerezovou ocel 301. Elon Musk také oznámil, že raketa byla přejmenována na Starship.<br><br>
+Dle současných informací má být 120 metrů vysoká. Bude dvoustupňová, přičemž oba stupně budou moci přistát na zemi. Raketa bude schopna dopravit na nízkou oběžnou dráhu Země přes 100 tun nákladu. Oficiálně dokončena by měla být začátkem roku 2022.<br><br>
+Pro počáteční testování byl použit technologický demonstrátor Starhopper, na kterém byly provedeny první statické zážehy motoru Raptor a 26. července 2019 úspěšně proběhl první neupoutaný "skok" do výšky kolem 20 metrů. Druhý a poslední pokus proběhl 27. srpna, tentokrát Starhopper vystoupal do výšky 150 metrů a poté měkce přistál. Testovací lety lodi Starship začaly v roce 2020, první proběhl 4. srpna 2020 (SN5 do 150 metrů). <br><br>
+</p>
 
 <!-- Footer -->
-<footer class="bg-light text-start ">
-<form class="container-lg">
-    <p class="pt-2 pt-5">
-    <strong>Napište nám!</strong>
-    </p>
-    <div class="form-group">
-    <label for="exampleInputEmail1">Vaše jméno</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Zadejte jméno">
-    </div>
-    <div class="form-group mb-4">
-    <label for="exampleInputPassword1">Zpráva</label>
-    <textarea class="form-control" rows="3" placeholder="Zde napište zprávu"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary mb-5">Odeslat</button>
-</form>
-
-<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2021 Copyright: Matěj Emmer
-</div>
+<footer>
+  <div class="copyright">
+    <p>© 2021 Copyright: Matěj Emmer</p>
+  </div>
 </footer>
+<script src="../js/script.js"></script>
 </body>
 </html>

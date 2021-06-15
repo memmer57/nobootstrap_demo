@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 p {
@@ -62,6 +63,10 @@ nav > ul > li > a:hover {
     color: black;
 }
 
+nav > .icon {
+    display: none;
+}
+
 .navbar-brand {
     margin-left: var(--navbar-margin);
 }
@@ -97,7 +102,7 @@ nav > ul > li > a:hover {
     display: block;
     width: 1000px;
     background: #ecf0f1;
-    padding: 5em 2.5em 5em 2.5em;
+    padding: 4em 2.5em 4em 2.5em;
     margin: 1.5em auto 1.5em auto;
 }
 .jumbotron-nadpis {
@@ -107,13 +112,89 @@ nav > ul > li > a:hover {
 }
 .jumbotron-text {
     font-weight: 300;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     line-height: 1.5em;
 }
+
+.button-green {
+    background-color: #18BC9C;
+    padding: 16px;
+    border-radius: 1em;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+.button-green:hover {
+    background-color: #12997e;
+    transition: 0.3s;
+}
+
+
+/* - Footer - */
+
+
+.copyright {
+    width: 100vw;
+    height: 24px;
+    background-color: rgb(187, 187, 187);
+}
+
+.copyright > p {
+    text-align: center;
+    line-height: 24px;
+}
+
+
+/* - Responzivnost - */
 
 
 @media (max-width: 1150px) {
     .jumbotron {
-        width: 90% !important;
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 920px) {
+    .nav-items {
+        display: none;
+    }
+
+    nav > ul > li > a {
+        /*padding: 14px 16px;*/
+        display: block;
+    }
+  
+    /* Style the hamburger menu */
+    nav > .icon {
+        display: block;
+        margin-right: var(--navbar-margin);
+    }
+
+    nav > .icon > i {
+        color: white;
+        font-size: 28px;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    nav > .icon > i:hover {
+        color: black;
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 90%;
+    }
+
+    .title-image h1 {
+        font-size: 14vw;
     }
 }

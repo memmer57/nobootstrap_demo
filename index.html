@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SpaceX</title>
 </head>
 <body>
@@ -13,23 +14,23 @@
     <a class="navbar-brand" href="./index.html">
       <img src="./images/spacex_logo.svg" alt="SpaceX logo" width="200" >  
     </a>
-    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>-->
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item mr-3 ml-3">
+    <ul class="nav-items" id="items">
+      <li class="nav-item">
         <a class="nav-link" href="#F">Falcon 9</a>
       </li>
-      <li class="nav-item mr-3 ml-3">
+      <li class="nav-item">
         <a class="nav-link" href="#FH">Falcon Heavy</a>
       </li>
-      <li class="nav-item mr-3 ml-3">
+      <li class="nav-item">
         <a class="nav-link" href="#Starship">Starship</a>
       </li>
-      <li class="nav-item mr-3 ml-3">
+      <li class="nav-item">
         <a class="nav-link" href="#galerie">Galerie</a>
       </li>
     </ul>
+    <a href="javascript:void(0);" class="icon" onclick="open_navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
   </nav>
 
 <!--Carousel-->
@@ -43,21 +44,21 @@
     <h2 class="jumbotron-nadpis">Falcon 9</h2>
     <p class="jumbotron-text">Falcon 9 je nosná raketa americké soukromé společnosti SpaceX. Svým tahem a nosností je srovnatelná s ruskými raketami Angara 5 a Proton, americkými Delta IV a Atlas V a čínskou Čchang-čeng 5.</p>
     <p class="lead" id="FH">
-      <a class="btn btn-primary btn-lg" href="./rakety/Falcon9.html" role="button">Více</a>
+      <a class="button-green" href="./rakety/Falcon9.html" role="button">Více</a>
     </p>
   </div>
   <div class="jumbotron">
     <h2 class="jumbotron-nadpis">Falcon Heavy</h2>
     <p class="jumbotron-text">Falcon Heavy je nosná raketa americké soukromé společnosti SpaceX. Falcon Heavy je nejsilnější v současnosti užívanou raketou. Má dvakrát vyšší tah než druhá nejsilnější raketa Delta IV Heavy, které od ukončení ruského programu Eněrgija toto prvenství patřilo.</p>
     <p class="lead" id="Starship">
-      <a class="btn btn-primary btn-lg" href="./rakety/FalconHeavy.html" role="button">Více</a>
+      <a class="button-green" href="./rakety/FalconHeavy.html" role="button">Více</a>
     </p>
   </div>
   <div class="jumbotron">
     <h2 class="jumbotron-nadpis">Starship</h2>
     <p class="jumbotron-text">Starship – Super Heavy (dříve: Big Falcon Rocket "BFR") je raketa vyvíjená společností SpaceX. Kosmická loď zvaná Starship a raketa Super Heavy představují plně znovupoužitelný dopravní systém navržený k přepravě posádky i nákladu na orbitu Země, na Měsíc, Mars a dále.</p>
     <p class="lead" id="galerie">
-      <a class="btn btn-primary btn-lg" href="./rakety/Starship.html" role="button">Více</a>
+      <a class="button-green" href="./rakety/Starship.html" role="button">Více</a>
     </p>
   </div>
 </div>
@@ -101,10 +102,11 @@
 
 
 <!-- Footer -->
-<footer class="bg-light text-start">
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2021 Copyright: Matěj Emmer
+<footer>
+  <div class="copyright">
+    <p>© 2021 Copyright: Matěj Emmer</p>
   </div>
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

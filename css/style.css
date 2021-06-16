@@ -38,13 +38,14 @@ p {
 .raketa-text {
     width: 70vw;
     margin: 0 auto var(--standard-margin) auto;
+    line-height: 1.5em;
 }
 
 
 
 /* - Navbar - */
 nav {
-    background-color: #18BC9C !important;
+    background-color: #212529 !important;
     position: fixed;
     align-items: center;
     top: 0;
@@ -73,10 +74,12 @@ nav > ul > li > a {
     font-weight: 600;
     font-size: 1.2em;
     padding: 12px;
+    transition: 0.3s;
 }
 
 nav > ul > li > a:hover {
-    color: black;
+    background-color: #0a0a0a;
+    transition: 0.3s;
 }
 
 nav > .icon {
@@ -85,6 +88,11 @@ nav > .icon {
 
 .navbar-brand {
     margin-left: var(--navbar-margin);
+    transition: 0.3s;
+}
+.navbar-brand:hover {
+    filter: brightness(75%);
+    transition: 0.3s;
 }
 
 
@@ -134,7 +142,7 @@ nav > .icon {
 }
 
 .button-green {
-    background-color: #18BC9C;
+    background-color: #34383b;
     padding: 12px;
     border-radius: 0.5em;
     text-decoration: none;
@@ -144,7 +152,7 @@ nav > .icon {
     transition: 0.3s;
 }
 .button-green:hover {
-    background-color: #12997e;
+    background-color: #0e0e0e;
     transition: 0.3s;
 }
 
